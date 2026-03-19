@@ -13,3 +13,7 @@ if __name__ == "__main__":
     # Check disk usage for the current directory
     current_dir = os.getcwd()
     check_disk_usage(current_dir)
+    home_dir = os.path.expanduser("~")
+    check_multiple_paths([current_dir, home_dir])
+
+
