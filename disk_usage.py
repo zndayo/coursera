@@ -2,7 +2,7 @@ import shutil
 import os
 
 def check_disk_usage(path):
-    """Check disk usage for a given path."""
+    """Check disk usage for any given path."""
     total, used, free = shutil.disk_usage(path)
     print(f"Disk usage for {path}:")
     print(f"  Total: {total // (2**30)} GB")
